@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #ff6347; /* Tomato color */
+  background-color: #ff6347; /* Tomato */
   color: white;
   padding: 20px 0;
 }
@@ -49,19 +49,21 @@ section {
 }
 
 /* Menu Section */
-#menu h2 {
+#menu h2,
+#location h2,
+#contact h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #ff6347;
+  margin-bottom: 20px;
 }
 
-.menu-category {
-  margin-top: 30px;
-}
+#menu h2 { color: #ff6347; }
+#location h2 { color: #b63704; }
+#contact h2 { color: #ff6347; }
 
 .menu-category h3 {
   font-size: 2rem;
-  color: #ff7f50; /* Lighter orange */
+  color: #ff7f50; /* Light orange */
   margin-bottom: 10px;
   text-align: center;
 }
@@ -96,7 +98,6 @@ section {
 
 .item-details strong {
   font-size: 1.5rem;
-  color: #333;
 }
 
 .item-details p {
@@ -105,13 +106,6 @@ section {
 }
 
 /* Location Section */
-#location h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #b63704;
-  margin-bottom: 20px;
-}
-
 #location p {
   text-align: center;
   font-size: 1.2rem;
@@ -126,13 +120,6 @@ section {
 }
 
 /* Contact Section */
-#contact h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #ff6347;
-  margin-bottom: 20px;
-}
-
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -181,8 +168,4 @@ footer {
   background-color: #333;
   color: white;
   font-size: 1.2rem;
-}
-
-footer p {
-  margin-top: 10px;
 }
