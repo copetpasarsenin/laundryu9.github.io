@@ -1,4 +1,4 @@
-/* Resetting default styles */
+/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,62 +7,52 @@
 
 /* Body Styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7; /* Lighter background for better contrast */
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
   color: #333;
   line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-  background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient for a vibrant effect */
+  background-color: #ff6347; /* Tomato color */
   color: white;
   padding: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 header h1 {
   font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
 }
 
 header nav a:hover {
-  color: #ffd700; /* Golden color when hovering */
+  text-decoration: underline;
 }
 
 /* Section Styling */
 section {
-  padding: 40px 30px;
-  margin: 40px auto;
-  max-width: 1100px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 20px 0;
 }
 
 /* Menu Section */
 #menu h2 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #ff6347;
-  margin-bottom: 30px;
 }
 
 .menu-category {
@@ -71,57 +61,53 @@ section {
 
 .menu-category h3 {
   font-size: 2rem;
-  color: #ff8a00;
-  margin-bottom: 15px;
+  color: #ff7f50; /* Lighter orange */
+  margin-bottom: 10px;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
 .menu-item img {
   width: 150px;
   height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-right: 20px;
 }
 
 .item-details {
-  flex: 1;
+  max-width: 500px;
 }
 
 .item-details strong {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #333;
-  font-weight: 600;
 }
 
 .item-details p {
   font-size: 1rem;
-  color: #777;
+  color: #666;
 }
 
 /* Location Section */
 #location h2 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #ff6347;
   margin-bottom: 20px;
 }
@@ -129,21 +115,20 @@ section {
 #location p {
   text-align: center;
   font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 30px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 #location iframe {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
 #contact h2 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #ff6347;
   margin-bottom: 20px;
 }
@@ -152,7 +137,7 @@ form {
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -161,26 +146,16 @@ form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.1rem;
-  color: #333;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  background-color: #f9f9f9;
-}
-
-form input:focus,
-form textarea:focus {
-  border-color: #ff6347;
-  outline: none;
-  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 form button {
@@ -190,13 +165,13 @@ form button {
   color: white;
   font-size: 1.2rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #e52e71; /* Darker pink for hover */
+  background-color: #e55347;
 }
 
 /* Footer */
@@ -205,8 +180,7 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 footer p {
