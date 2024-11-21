@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Resetting default styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,52 +7,62 @@
 
 /* Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7; /* Lighter background for better contrast */
   color: #333;
   line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-  background-color: #ff6347; /* Tomato color */
+  background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient for a vibrant effect */
   color: white;
   padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 header h1 {
   font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  color: #ffd700; /* Golden color when hovering */
 }
 
 /* Section Styling */
 section {
-  padding: 40px 20px;
-  margin: 20px 0;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 1100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu Section */
 #menu h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ff6347;
+  margin-bottom: 30px;
 }
 
 .menu-category {
@@ -61,53 +71,57 @@ section {
 
 .menu-category h3 {
   font-size: 2rem;
-  color: #ff7f50; /* Lighter orange */
-  margin-bottom: 10px;
+  color: #ff8a00;
+  margin-bottom: 15px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .menu-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  transition: transform 0.3s ease;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .menu-item img {
   width: 150px;
   height: 100px;
-  border-radius: 5px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-right: 20px;
 }
 
 .item-details {
-  max-width: 500px;
+  flex: 1;
 }
 
 .item-details strong {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #333;
+  font-weight: 600;
 }
 
 .item-details p {
   font-size: 1rem;
-  color: #666;
+  color: #777;
 }
 
 /* Location Section */
 #location h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ff6347;
   margin-bottom: 20px;
 }
@@ -115,20 +129,21 @@ section {
 #location p {
   text-align: center;
   font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 20px;
+  color: #444;
+  margin-bottom: 30px;
 }
 
 #location iframe {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
 #contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ff6347;
   margin-bottom: 20px;
 }
@@ -137,7 +152,7 @@ form {
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -146,16 +161,26 @@ form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: #f9f9f9;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff6347;
+  outline: none;
+  background-color: #fff;
 }
 
 form button {
@@ -165,13 +190,13 @@ form button {
   color: white;
   font-size: 1.2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 form button:hover {
-  background-color: #e55347;
+  background-color: #e52e71; /* Darker pink for hover */
 }
 
 /* Footer */
@@ -180,7 +205,8 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 footer p {
