@@ -5,167 +5,139 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Global styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
+  background-color: #f9f9f9;
+  color: #444;
   line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header */
 header {
-  background-color: #ff6347; /* Tomato */
+  background-color: rgba(107, 105, 106, 0.8); /* Warna dengan transparansi */
   color: white;
-  padding: 20px 0;
+  padding: 20px;
+  text-align: center;
 }
 
-header .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-header h1 {
-  font-size: 2.5rem;
+header nav {
+  margin-top: 10px;
 }
 
 header nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 1.2rem;
+  margin: 0 10px;
+  font-size: 1.1rem;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-/* Section Styling */
+
+/* Section */
 section {
-  padding: 40px 20px;
-  margin: 20px 0;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(95, 93, 94, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu Section */
-#menu h2,
-#location h2,
-#contact h2 {
+section h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  color: #0f0d0d;
+  margin-bottom: 15px;
 }
 
-#menu h2 { color: #ff6347; }
-#location h2 { color: #b63704; }
-#contact h2 { color: #ff6347; }
-
-.menu-category h3 {
-  font-size: 2rem;
-  color: #ff7f50; /* Light orange */
-  margin-bottom: 10px;
-  text-align: center;
-}
-
+/* Menu items */
 .menu-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  transition: transform 0.3s ease;
+  background-color: rgba(119, 117, 118, 0.8); /* Transparan penuh */
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid rgba(107, 105, 106, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s;
 }
+
 
 .menu-item:hover {
   transform: scale(1.05);
 }
 
 .menu-item img {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 75px;
   border-radius: 5px;
-  margin-right: 20px;
-}
-
-.item-details {
-  max-width: 500px;
+  margin-right: 15px;
 }
 
 .item-details strong {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .item-details p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* Location Section */
-#location p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#location iframe {
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-/* Contact Section */
+/* Forms */
 form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
-  background-color: #fff;
+  background: rgba(107, 105, 106, 0.8);
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form input,
-form textarea {
+form textarea,
+form button {
   width: 100%;
+  margin-bottom: 15px;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
 }
 
 form button {
-  width: 100%;
-  padding: 15px;
-  background-color: #ff6347;
+  background-color: #87cefa;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 form button:hover {
-  background-color: #e55347;
+  background-color: #4682b4;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #333;
+  padding: 15px;
+  background-color: #444;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  background-image: url('./image/WhatsApp\ Image\ 2024-11-21\ at\ 17.06.20.jpeg'); /* Tambahkan gambar lokal */
+  background-size: cover; /* Membuat gambar memenuhi layar */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  background-attachment: fixed; /* Membuat gambar tetap saat menggulir */
+  color: #444;
+  line-height: 1.6;
 }
