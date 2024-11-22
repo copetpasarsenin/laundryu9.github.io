@@ -9,7 +9,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
-  color: #444;
+  color: #f9f9f9;
   line-height: 1.6;
 }
 
@@ -48,18 +48,19 @@ section {
 
 section h2 {
   text-align: center;
-  color: #0f0d0d;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
 /* Menu items */
 .menu-item {
+  color: white;
   display: flex;
   align-items: center;
   background-color: rgba(119, 117, 118, 0.8); /* Transparan penuh */
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid rgba(107, 105, 106, 0.8);
+  border: 1px solid rgba(233, 226, 229, 0.8);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s;
@@ -79,12 +80,12 @@ section h2 {
 
 .item-details strong {
   font-size: 1.2rem;
-  color: #333;
+  color: #f9f9f9;
 }
 
 .item-details p {
   font-size: 0.9rem;
-  color: #555;
+  color: #f9f9f9;
 }
 
 /* Forms */
@@ -140,4 +141,15 @@ body {
   background-attachment: fixed; /* Membuat gambar tetap saat menggulir */
   color: #444;
   line-height: 1.6;
+}
+
+.menu-category {
+  color: white;
+}
+
+.menu {
+  color: white;
+}
+.menuatas {
+  color: white;
 }
