@@ -8,14 +8,15 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background: url('../image/logo.jpeg') no-repeat center center fixed; /* Gambar latar belakang lokal */
+    background-size: cover; /* Memastikan gambar memenuhi seluruh area */
     color: #333;
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgba(142, 214, 226, 0.8); /* Transparansi untuk melihat gambar latar belakang */
+    color: #272020;
     padding: 20px 0;
     text-align: center;
 }
@@ -31,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #272020;
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,7 +43,6 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('https://source.unsplash.com/1600x900/?laundry') no-repeat center center/cover;
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -80,7 +80,7 @@ section {
 h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #4CAF50;
+    color: #272020;
 }
 
 .service {
@@ -115,7 +115,7 @@ input, select, textarea {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #8ed6e2;
     color: white;
     padding: 10px;
     border: none;
@@ -125,7 +125,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #8ed6e2;
 }
 
 /* Contact Section */
@@ -135,7 +135,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #4CAF50;
+    background-color: rgba(142, 214, 226, 0.8); /* Transparansi untuk melihat gambar latar belakang */
     color: white;
     text-align: center;
     padding: 10px 0;
