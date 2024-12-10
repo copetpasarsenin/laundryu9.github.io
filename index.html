@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry U9</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tambahkan gaya CSS untuk tombol */
+        .btn {
+            display: inline-block;
+            background-color: #25d366; /* Warna hijau khas WhatsApp */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1da851; /* Warna hijau lebih gelap */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,17 +48,17 @@
         <div class="service">
             <h3>Cuci Kering</h3>
             <p>Rp.5000/Kg</p>
-            <p>Layanan cuci kering Dibungkus.</p>
+            <p>Layanan cuci kering dibungkus.</p>
         </div>
         <div class="service">
             <h3>Cuci Setrika</h3>
             <p>Rp.6000/Kg</p>
-            <p>Cuci Setrika Rapih.</p>
+            <p>Cuci setrika rapi.</p>
         </div>
         <div class="service">
             <h3>Paket Express (Cuci Setrika)</h3>
             <p>Rp.8000/Kg</p>
-            <p>Paket laundry Express Satu Hari Selesai.</p>
+            <p>Paket laundry express satu hari selesai.</p>
         </div>
     </section>
 
@@ -50,40 +68,27 @@
     </section>
 
     <section id="order">
-        <h2>Form Pemesanan</h2>
-        <form action="submit_order.php" method="POST">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Telepon:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="service">Layanan:</label>
-            <select id="service" name="service" required>
-                <option value="cuci_kering">Cuci Kering</option>
-                <option value="cuci_satuan">Cuci Satuan</option>
-                <option value="paket_hemat">Paket Hemat</option>
-            </select>
-
-            <label for="details">Detail Pakaian:</label>
-            <textarea id="details" name="details" rows="4" required></textarea>
-
-            <button type="submit">Kirim Pemesanan</button>
-        </form>
+        <h2>Order Sekarang</h2>
+        <p>Pesan layanan laundry dengan cepat melalui WhatsApp.</p>
+        <!-- Tombol direct ke WhatsApp -->
+        <a 
+            href="https://wa.me/6281234567890?text=Halo%20Laundry%20U9,%20saya%20ingin%20memesan%20layanan%20laundry.%20Berikut%20adalah%20informasi%20saya:%0A%0A-%20Nama:%20%0A-%20Layanan:%20Cuci%20Kering%20/%20Cuci%20Setrika%20/%20Paket%20Express%0A-%20Detail%20Pakaian:%20%0A%0ATerima%20kasih!"
+            class="btn"
+            target="_blank"
+        >
+            Order via WhatsApp
+        </a>
     </section>
 
     <section id="contact">
         <h2>Kontak Kami</h2>
         <p>Email: laundryu9gadang@gmail.com</p>
         <p>Telepon: 0812-3456-7890</p>
-        <p>Alamat: Jl.Tanjung Aur Perum Gadang Sejahtera 5 Blok U9 Palembang Sumatera Selatan</p>
+        <p>Alamat: Jl. Tanjung Aur Perum Gadang Sejahtera 5 Blok U9 Palembang Sumatera Selatan</p>
     </section>
 
     <footer>
-        <!-- <p>&copy; </p> -->
+        <p>&copy; 2024 Laundry U9. Semua Hak Dilindungi.</p>
     </footer>
 </body>
 </html>
