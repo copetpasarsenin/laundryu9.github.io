@@ -6,7 +6,13 @@
     <title>Laundry U9</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Tambahkan gaya CSS untuk tombol */
+        /* Tambahkan gaya CSS */
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
         .btn {
             display: inline-block;
             background-color: #25d366; /* Warna hijau khas WhatsApp */
@@ -22,6 +28,23 @@
         .btn:hover {
             background-color: #1da851; /* Warna hijau lebih gelap */
         }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #272020;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +56,7 @@
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#order">Pemesanan</a></li>
                 <li><a href="#contact">Kontak</a></li>
+                <li><a href="#maps">Lokasi</a></li>
             </ul>
         </nav>
     </header>
@@ -70,7 +94,6 @@
     <section id="order">
         <h2>Order Sekarang</h2>
         <p>Pesan layanan laundry dengan cepat melalui WhatsApp.</p>
-        <!-- Tombol direct ke WhatsApp -->
         <a 
             href="https://wa.me/6281234567890?text=Halo%20Laundry%20U9,%20saya%20ingin%20memesan%20layanan%20laundry.%20Berikut%20adalah%20informasi%20saya:%0A%0A-%20Nama:%20%0A-%20Layanan:%20Cuci%20Kering%20/%20Cuci%20Setrika%20/%20Paket%20Express%0A-%20Detail%20Pakaian:%20%0A%0ATerima%20kasih!"
             class="btn"
@@ -87,8 +110,9 @@
         <p>Alamat: Jl. Tanjung Aur Perum Gadang Sejahtera 5 Blok U9 Palembang Sumatera Selatan</p>
     </section>
 
-    <footer>
-        <p>Laundry U9.</p>
-    </footer>
-</body>
-</html>
+    <section id="maps">
+        <h2>Lokasi Laundry U9</h2>
+        <p>Temukan kami di Google Maps:</p>
+        <!-- Iframe untuk embed Google Maps -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.396755031237!2d104.6956906737409!3d-2.987257139848536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75003ef0010d%3A0xf827978a2da20cba!2sLaundry%20u9!5e0!3m2!1sid!2sid!4v1733821909754!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
