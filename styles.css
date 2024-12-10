@@ -5,17 +5,30 @@
     box-sizing: border-box;
 }
 
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: url('../image/logo.jpeg') no-repeat center center fixed; /* Gambar latar belakang lokal */
-    background-size: cover; /* Memastikan gambar memenuhi seluruh area */
+    background: url('../image/logo.jpeg') no-repeat center center fixed;
+    background-size: cover;
     color: #0f0f0f;
+    position: relative; /* For overlay */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay effect */
+    z-index: -1; /* Behind content */
 }
 
 /* Header */
 header {
-    background-color: rgba(142, 214, 226, 0.8); /* Transparansi untuk melihat gambar latar belakang */
+    background-color: rgba(142, 214, 226, 0.8); /* Transparent header */
     color: #272020;
     padding: 20px 0;
     text-align: center;
@@ -24,21 +37,20 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li a {
     color: #272020;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ff9800;
 }
 
 /* Hero Section */
@@ -125,7 +137,7 @@ button {
 }
 
 button:hover {
-    background-color: #8ed6e2;
+    background-color: #71c8d4;
 }
 
 /* Contact Section */
@@ -135,7 +147,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: rgba(142, 214, 226, 0.8); /* Transparansi untuk melihat gambar latar belakang */
+    background-color: rgba(142, 214, 226, 0.8);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -146,9 +158,9 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     #hero h2 {
@@ -158,24 +170,4 @@ footer {
     #hero p {
         font-size: 1em;
     }
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: url('../image/logo.jpeg') no-repeat center center fixed; /* Gambar latar belakang lokal */
-    background-size: cover; /* Memastikan gambar memenuhi seluruh area */
-    color: #0f0f0f;
-    position: relative; /* Agar overlay bekerja */
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Warna gelap dengan transparansi */
-    z-index: -1; /* Agar berada di belakang konten */
 }
